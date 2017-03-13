@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=shyaml
+
+override_dh_auto_clean:
+	dh_auto_clean
+
+	git checkout setup.cfg setup.py
+
+override_dh_auto_install:
+	dh_auto_install
+
+	git checkout setup.cfg setup.py
+
+%:
+	dh $@ --with python2 --buildsystem=pybuild

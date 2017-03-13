@@ -1,0 +1,20 @@
+Source: shyaml
+Section: utils
+Priority: optional
+Maintainer: Yury Zavarin <yzavarin@ebi.ac.uk>
+Build-Depends:
+ debhelper (>= 9),
+ dh-python,
+ git,
+ python-all,
+ python-d2to1,
+ python-setuptools,
+X-Python-Version: >= 2.7
+
+Package: shyaml
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python:Depends},
+Description: read access to YAML files through command line
+

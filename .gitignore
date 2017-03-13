@@ -1,0 +1,5 @@
+/.eggs/
+/.pybuild/
+/CHANGELOG.rst
+/build/
+/shyaml.egg-info/
